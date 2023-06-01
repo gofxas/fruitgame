@@ -14,7 +14,7 @@ html {
     max-width: 18.75rem;
     min-width: 18.75rem;
     width: 100%;
-    background-image: url(/assets/images/machine1_bg.png);
+    background-image: url(../images/machine1_bg.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 31.25rem;
@@ -49,7 +49,7 @@ html {
 .num {
     width: .9rem;
     height: 1.3rem;
-    background-image: url(/assets/images/ziti_jp.png);
+    background-image: url(../images/ziti_jp.png);
     background-size: cover;
 }
 .num0 {
@@ -159,7 +159,7 @@ html {
 }
 .m-left {
     left: 1.5rem;
-    background-image: url(/assets/images/left.png);
+    background-image: url(../images/left.png);
     background-size: 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@ html {
 .m-right {
     width: 2.3rem;
     left: 4.3rem;
-    background-image: url(/assets/images/right.png);
+    background-image: url(../images/right.png);
     background-size: 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -186,7 +186,7 @@ html {
     top: .5rem;
 }
 .m-big {
-    background-image: url(/assets/images/big.png);
+    background-image: url(../images/big.png);
     background-size: 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@ html {
     background-position: 0 -2.1rem;
 }
 .m-small {
-    background-image: url(/assets/images/small.png);
+    background-image: url(../images/small.png);
     background-size: 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -208,7 +208,7 @@ html {
 .m-start {
     width: 3.2rem;
     height: 1.7rem;
-    background-image: url(/assets/images/go.png);
+    background-image: url(../images/go.png);
     background-size: 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -230,13 +230,13 @@ html {
     background-repeat: no-repeat;
 }
 .m-scale1 {
-    background-image: url(/assets/images/scale2.png);
+    background-image: url(../images/scale2.png);
     background-size: 100%; 
     left: 2.75rem;
     top: .45rem;
 }
 .m-scale2 {
-    background-image: url(/assets/images/scale1.png);
+    background-image: url(../images/scale1.png);
     background-size: 100%; 
     right: 2.75rem;
     top: .45rem;
@@ -255,7 +255,7 @@ html {
 .snum {
     width: .7rem;
     height: 1rem;
-    background-image: url(/assets/images/ziti_jp.png);
+    background-image: url(../images/ziti_jp.png);
     background-size: cover;
 }
 .donate1 {
@@ -290,7 +290,7 @@ html {
 .fruits-btn {
     width: 2rem;
     height: 2rem;
-    background-image: url(/assets/images/fruit_btn.png);
+    background-image: url(../images/fruit_btn.png);
     background-repeat: no-repeat;
     background-size: 2rem;
 }
