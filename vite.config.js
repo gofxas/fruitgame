@@ -13,6 +13,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode, command }) => ({
   // www-lc.drugv.com
+  base:'./',
   server: {
     host:'0.0.0.0',
     port: 9090,
