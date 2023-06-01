@@ -127,7 +127,6 @@ world.rotate = async function () {
     this.running = false;
     user.donatestemp = _.clone(user.donates);
     user.donates = {};
-    console.log('reset')
     user.save();
     user.resetDonate();
 }
@@ -218,9 +217,7 @@ world.create();
 
 
 function sayMyName(index) {
-    console.log(world.gifts[index])
     const sound = world.gifts[index].sound;
-    console.log(sound)
     sounds[sound].play()
 }
 

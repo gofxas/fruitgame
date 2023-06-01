@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=none">
-    <link rel="icon" href="/favicon.svg" />
-    <title>Fruits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruitGrid</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
-  <script type="module" crossorigin src="/FruitGame/assets/index-17ccb309.js"></script>
-  <link rel="stylesheet" href="/FruitGame/assets/index-ee202044.css">
+    <link rel="stylesheet" href="./assets/css/sence.css">
+    <script src="./assets/js/howler.js"></script>
+    <script src="./assets/js/lodash.js"></script>
+    <script src="./assets/js/sound.js"></script>
 </head>
-<body>
-    <div id="app"></div>
-    
-</body>
 <script>
-    const setSize = function () {
+        const setSize = function () {
         const width = window.innerWidth;
         if (width <= 375) {
             document.querySelector('html').style.fontSize = '20px'
@@ -31,4 +28,42 @@
     };
     setSize();
 </script>
+<body>
+    <div id="app">
+        <div class="m-score">
+            <div class="m-score-win">
+            </div>
+            <div class="m-score-credit">
+            </div>
+        </div>
+        <div class="m-grid" id="grid">
+        </div>
+        <div class="m-control">
+            <div class="m-left"></div>
+            <div class="m-right"></div>
+            <!-- onclick="world.rotate()" -->
+            <div onclick="user.start()" class="m-start"></div>
+        </div>
+        <div class="m-scale">
+            <div class="m-scale-v m-scale1"></div>
+            <div class="m-scale-v m-scale2"></div>
+        </div>
+        <div class="m-donate">
+            <div class="m-donate-item donate1"></div>
+            <div class="m-donate-item donate2"></div>
+            <div class="m-donate-item donate3"></div>
+            <div class="m-donate-item donate4"></div>
+            <div class="m-donate-item donate5"></div>
+            <div class="m-donate-item donate6"></div>
+            <div class="m-donate-item donate7"></div>
+            <div class="m-donate-item donate8"></div>
+        </div>
+        <div class="m-fruits">
+        </div>
+    </div>
+</body>
+<script src="./assets/js/user.js"></script>
+<script src="./assets/js/luck.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/world.luckgifts.js"></script>
 </html>

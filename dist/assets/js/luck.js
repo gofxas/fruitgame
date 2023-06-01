@@ -45,7 +45,6 @@ const Luck = {
                 break;
             }
         };
-        console.log(key, '中奖类型');
         const index = _.random(this.gift_positions[key].length - 1);
         return this.gift_positions[key||'x3'][index]
     },
@@ -58,7 +57,6 @@ const Luck = {
                 break;
             }
         };
-        console.log(key, '中奖LUCK类型');
 
         return key || '真可惜';
     }

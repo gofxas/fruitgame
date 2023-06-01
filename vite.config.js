@@ -54,14 +54,14 @@ export default defineConfig(({ mode, command }) => ({
   dev:{
     rollupOptions:{
       input: {
-        index: path.resolve(__dirname, 'index.html')
+        index: path.resolve(__dirname, 'admin.html')
      }
     },
   },
   build:{
     rollupOptions:{
       input: {
-        index: path.resolve(__dirname, 'index.html')
+        index: path.resolve(__dirname, 'admin.html')
      }
     },
     minify: "terser", 
