@@ -1,7 +1,7 @@
 <template>
   <div class="page centerd flex-col">
     <div style="padding:2rem;">
-        <img width="200" src="./assets/images/mongo.svg" />
+        <img width="200" src="/assets/images/mongo.svg" />
     </div>
     <div>
       <el-button type="primary" @click="play">游玩</el-button>
