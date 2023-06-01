@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=none">
+    <link rel="icon" href="/favicon.svg" />
+    <title>Fruits</title>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+  <script type="module" crossorigin src="/assets/index-2d64aec0.js"></script>
+  <link rel="stylesheet" href="/assets/index-ee202044.css">
+</head>
+<body>
+    <div id="app"></div>
+    
+</body>
+<script>
+    const setSize = function () {
+        const width = window.innerWidth;
+        if (width <= 375) {
+            document.querySelector('html').style.fontSize = '20px'
+        } else if (width >= 525) {
+            document.querySelector('html').style.fontSize = '28px'
+        } else {
+            let s = (width - 375) * 0.0533 + 20;
+            document.querySelector('html').style.fontSize = s + 'px'
+        }
+    };
+    window.onresize = function () {
+        setSize()
+    };
+    setSize();
+</script>
+</html>

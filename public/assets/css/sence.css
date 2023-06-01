@@ -1,0 +1,306 @@
+:root {
+    --sence-width:15.96rem;
+    --grid-item-width: calc(var(--sence-width) / 7); 
+}
+html {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#app {
+    max-width: 18.75rem;
+    min-width: 18.75rem;
+    width: 100%;
+    background-image: url(/assets/images/machine1_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 31.25rem;
+    /* filter: grayscale(1); */
+    /* margin-top: 50%;
+    transform: translateY(-50%); */
+}
+
+.m-score {
+    height: 5.52rem;
+    position: relative;
+}
+.m-score-credit,
+.m-score-win {
+    /* background: rgba(125, 31, 31, 0.4); */
+    width: 7.2rem;
+    height: 1.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.m-score-win {
+    bottom: .2rem;
+    left: 1.45rem;
+}
+
+.m-score-credit {
+    bottom: .2rem;
+    right: 1.452rem;
+}
+.num {
+    width: .9rem;
+    height: 1.3rem;
+    background-image: url(/assets/images/ziti_jp.png);
+    background-size: cover;
+}
+.num0 {
+    background-position: 0% 0;
+}
+.num1 {
+    background-position: 12% 0;
+}
+.num2 {
+    background-position: 23% 0;
+}
+.num3 {
+    background-position: 34% 0;
+}
+.num4 {
+    background-position: 45% 0;
+}
+.num5 {
+    background-position: 56% 0;
+}
+.num6 {
+    background-position: 67% 0;
+}
+.num7 {
+    background-position: 78% 0;
+}
+.num8 {
+    background-position: 89% 0;
+}
+.num9 {
+    background-position: 100% 0;
+}
+.m-grid {
+    position: relative;
+    display: grid;
+    user-select: none;
+    grid-auto-flow: dense;
+    width: var(--sence-width);
+    height: var(--sence-width);
+    grid-template-columns: repeat(auto-fill, 
+    var(--grid-item-width));
+    grid-template-rows: repeat(auto-fill, var(--grid-item-width));
+    grid-gap: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    /* background-color: rgba(204, 51, 51, 0.727); */
+    margin: 0 auto;
+    
+}
+.m-grid-item {
+    position: relative;
+    box-sizing: border-box;
+    
+}
+.m-grid-item_x1 {
+    width: var(--grid-item-width);
+    height: var(--grid-item-width);
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #6666;
+    /* transition: .1s; */
+    /* filter: grayscale(0); */
+    /* border: .5px solid #ccc; */
+}
+.m-grid-item_x5 {
+    width: calc(var(--grid-item-width) *  5);
+    height: calc(var(--grid-item-width) *  5);
+    grid-column: span 5;
+    grid-row: span 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m-grid-item.stoped {
+    border-color: #fcb064;
+    background-color: #ffffff1d;
+    box-shadow: inset 0 0 20px 1px #fa1231ce;
+    /* background-color: #fff3; */
+}
+.m-grid-item.jumped {
+    border-color: #fcb064;
+    background-color: #ffffff1d;
+    animation: shadow .3s;
+    animation-iteration-count: infinite;
+    /* background-color: #fff3; */
+}
+@keyframes shadow {
+    from {
+        box-shadow: inset 0 0 20px 1px #fa1231ce;
+    }
+    to {
+        box-shadow: inset 0 0 20px 1px #fa123100;
+    }
+}
+.m-control{
+    position: relative;
+    width: 100%;
+    height: 2.6rem;
+    background-color: #6666;
+}
+.m-left,.m-right {
+    width: 2.5rem;
+    height: 1.9rem;
+    background-color: #fff0;
+    position: absolute;
+    top: .5rem;
+}
+.m-left {
+    left: 1.5rem;
+    background-image: url(/assets/images/left.png);
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.m-left:active {
+    background-position: 0 -1.8rem;
+}
+.m-right {
+    width: 2.3rem;
+    left: 4.3rem;
+    background-image: url(/assets/images/right.png);
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.m-right:active{
+    background-position: 0 -1.8rem;
+}
+.m-big,.m-small {
+    width: 2rem;
+    height: 1.9rem;
+    background-color: #fff0;
+    position: absolute;
+    top: .5rem;
+}
+.m-big {
+    background-image: url(/assets/images/big.png);
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: 10.5rem;
+}
+.m-big:active {
+    background-position: 0 -2.1rem;
+}
+.m-small {
+    background-image: url(/assets/images/small.png);
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: 8rem;
+}
+.m-small:active {
+    background-position: 0 -2.1rem;
+}
+.m-start {
+    width: 3.2rem;
+    height: 1.7rem;
+    background-image: url(/assets/images/go.png);
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    right: 1rem;
+    top: .6rem;
+    position: absolute;
+}
+.m-start:active,.m-start.click{
+    background-position: 0 -2rem;
+}
+.m-scale {
+    height: 1.8rem;
+    position: relative;
+}
+.m-scale-v {
+    width: 6.5rem;
+    height: 1.5rem;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.m-scale1 {
+    background-image: url(/assets/images/scale2.png);
+    background-size: 100%; 
+    left: 2.75rem;
+    top: .45rem;
+}
+.m-scale2 {
+    background-image: url(/assets/images/scale1.png);
+    background-size: 100%; 
+    right: 2.75rem;
+    top: .45rem;
+}
+.m-donate {
+    height: 1.5rem;
+    position: relative;
+}
+.m-donate-item {
+    width: 1.4rem;
+    display: flex;
+    position: absolute;
+    top: .25rem;
+    justify-content: flex-end;
+}
+.snum {
+    width: .7rem;
+    height: 1rem;
+    background-image: url(/assets/images/ziti_jp.png);
+    background-size: cover;
+}
+.donate1 {
+    left: 1.15rem;
+}
+.donate2 {
+    left: 3.3rem;
+}
+.donate3 {
+    left: 5.53rem;
+}
+.donate4 {
+    left: 7.7rem;
+}
+.donate5 {
+    left: 9.9rem;
+}
+.donate6 {
+    left: 12.05rem;
+}
+.donate7 {
+    left: 14.21rem;
+}
+.donate8 {
+    left: 16.4rem;
+}
+.m-fruits {
+    display: flex;
+    margin-top: .3rem;
+    justify-content: space-around;
+}
+.fruits-btn {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(/assets/images/fruit_btn.png);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+}
+
+.fruits-btn.f0 {background-position: 0 0;}
+.fruits-btn.f1 {background-position:  0 14.285714285714286%; }
+.fruits-btn.f2 {background-position:  0 28.571428571428573%; }
+.fruits-btn.f3 {background-position:  0 42.85714285714286%; }
+.fruits-btn.f4 {background-position:  0 57.142857142857146%; }
+.fruits-btn.f5 {background-position:  0 71.42857142857143%; }
+.fruits-btn.f6 {background-position:  0 85.71428571428572%; }
+.fruits-btn.f7 {background-position: 0 100%; }
+/* 14.285714285714286 */
